@@ -82,17 +82,17 @@ public class ContourLoader {
 		
 	}
 	
-	public void mapContoursToRect(float x, float y, float width, float height) {
+	public void mapContours(float xMin, float xMax, float yMin, float yMax) {
 		
 		for (Contour c: contours) {
-			c.mapPoints(minX, maxX, x, x + width, minY, maxY, y, y + height);
+			c.mapPoints(minX, maxX, xMin, xMax, minY, maxY, yMin, yMax);
 		}
 		
 		// Update limits
-		minX = x;
-		maxX = x + width;
-		minY = y; 
-		maxY = y + height;
+		minX = xMin;
+		maxX = xMax;
+		minY = yMin; 
+		maxY = yMax;
 	}
 	
 	public ArrayList<Contour> getContours() {

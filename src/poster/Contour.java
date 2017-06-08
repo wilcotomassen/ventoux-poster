@@ -33,7 +33,7 @@ public class Contour {
 	}
 	
 	public void addPoint(PVector point) {
-		point.z = elevation;
+		point.z = elevation * 0.08f;
 		points.add(point);
 	}
 	

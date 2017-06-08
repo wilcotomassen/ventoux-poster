@@ -7,5 +7,6 @@
 	<classpathentry kind="lib" path="lib/processing/itext.jar"/>
 	<classpathentry kind="lib" path="lib/processing/jogl-all.jar"/>
 	<classpathentry kind="lib" path="lib/processing/pdf.jar"/>
+	<classpathentry kind="lib" path="lib/peasycam.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
